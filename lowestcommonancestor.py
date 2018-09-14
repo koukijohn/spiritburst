@@ -36,4 +36,5 @@ if __name__ == "__main__":
     root.left.right = Node(5)
     root.right.left = Node(6)
     root.right.right = Node(7)
-    print "LCA = ", findLCA(root)
+    print("Lowest Common Ancestor = {}".format(
+        findLowestCommonAncestor(root, 4, 6).key))

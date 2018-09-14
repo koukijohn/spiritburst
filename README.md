@@ -1,2 +1,2 @@
 # spiritburst
-This directory holds files that I will be using to test my coding skills.
+This directory holds modules containing practice programming.
