@@ -20,7 +20,7 @@ def binarysearch(arr, l, r, x):
 arr = [ 2, 3, 4, 10, 40 ]
 x = 10
 
-result = binarysearh(arr, 0, len(arr) - 1, x)
+result = binarysearch(arr, 0, len(arr) - 1, x)
 
 if result != -1:
     print("Element at index %d" % result)
