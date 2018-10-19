@@ -7,7 +7,7 @@ def binarysearch(arr, l, r, x):
     """
     """
     while (l <= r):
-        mid = l + (r - l)/2;
+        mid = (l + r) // 2;
 
         if (arr[mid] == x):
             return mid
