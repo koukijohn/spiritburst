@@ -1,0 +1,15 @@
+description "Gunicorn application server running instakush"
+
+start on runlevel [2345]
+stop on runlevel [!2345]
+
+env instakush_MYSQL_USER=instakush_dev
+env instakush_MYSQL_PWD=instakush_dev_pwd
+env instakush_MYSQL_HOST=localhost
+env instakush_MYSQL_DB=instakush_dev_db
+env instakush_TYPE_STORAGE=db
+
+script
+    cd /home/ubuntu/instakush_project
+    exec gunicorn --workers 3 --bind 127.0.0.1:7777 instakush_flask.instakush:application
+end script
